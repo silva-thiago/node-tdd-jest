@@ -15,11 +15,13 @@
     "bcrypt"
   ],
   "scripts": {
+    "serve": "node src/server.js",
+    "start": "nodemon src/server.js --ignore tests",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "^12.22.7",
-    "npm": "^6.14.15"
+    "node": "^16.13.0",
+    "npm": "^8.1.4"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,12 @@
   },
   "homepage": "https://github.com/silva-thiago/node-tdd-jest#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "6.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
   }
 }
